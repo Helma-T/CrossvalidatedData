@@ -69,5 +69,5 @@ def my_friedman_test(q1, q2, q3, expt_ratings):
     return
 
 
-anonymized=pd.read_csv("/home/helma/Documents/PhD/a_InteractiveMoodTracker/Data/PreStudy/anonymized.csv")
+anonymized=pd.read_csv("anonymized.csv")
 my_friedman_test(anonymized["A_1"],anonymized["A_2"],anonymized["A_3"], anonymized[["A_1", "A_2","A_3"]])
